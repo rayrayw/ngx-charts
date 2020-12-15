@@ -174,7 +174,7 @@ export class PieSeriesComponent implements OnChanges {
 
   labelText(myArc): string {
     if (this.labelFormatting) {
-      return this.labelFormatting(myArc.data.name);
+      return this.labelFormatting(myArc.data);
     }
     return this.label(myArc);
   }
